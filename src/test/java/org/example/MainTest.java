@@ -9,7 +9,6 @@ import java.util.HashMap;
 public class MainTest {
 
     PermissionManager permissionManager;
-
     HashMap<PermissionLevel, String> permissons = new HashMap<>();
 
     @BeforeEach
