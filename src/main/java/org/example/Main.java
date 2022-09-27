@@ -19,6 +19,4 @@ class PermissionManager {
             case ADMIN -> "ADMIN";
         };
     }
-
-
 }
