@@ -27,4 +27,12 @@ public class MainTest {
             assertEquals(permissons.get(permissionLevel), permissionManager.getCurrentLevel());
         }
     }
+
+    @Test
+    @DisplayName("Permission level should be set for ADMIN")
+    void testSetAdmin() {
+        assertEquals(PermissionLevel.ADMIN, permissionManager.set(PermissionLevel.ADMIN),
+                "Regular level set should work for ADMIN");
+    }
 }
+
