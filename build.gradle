@@ -1,6 +1,8 @@
 plugins {
     id 'java'
     id 'jacoco'
+    id "org.sonarqube" version "3.4.0.2513"
+
 }
 
 group 'org.example'
@@ -29,4 +31,12 @@ jacocoTestReport {
         xml.required=true
         csv.required=false
     }
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "bhos-qa_l3-sonarcloud-kamrann001"
+    property "sonar.organization", "bhos-qa"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
